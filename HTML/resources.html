@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Movie Recomendations Resources</title>
+<style>
+ul{list-style-image:url("PopcornIcon.png");}
+</style>
+<link href="styles.css" rel="stylesheet">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<script>
+function countDown()
+{
+var todayIs = new Date()
+var end = new Date("January 1, 2024")
+var countDown = end-todayIs;
+var countDownFixed = Math.floor(countDown/(1000*60*60*24));
+document.write("In " + countDownFixed + " days, we are going to add a new genre!");
+}
+</script>
+</head>
+<body>
+<div id="wrapper">
+<header></header>
+<nav>
+<ul style = "margin-left:10px">
+<li><a href="index.html">Back to Home Page</a></li>
+<li><a href="pictures.html">Pictures</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href="customerform.html">Fill Out Our Form</a></li>
+
+</ul>
+</nav>
+<main>
+
+<h1 style="color:gold;font-family:verdana">Find Great Movies From Every Genre</h1>
+<br>
+<p style="color:gold">
+<b>View the current top 50 movies from any genre by using the links provided below. You can see the description, reviews, and many other attributes for each movie.</b>
+</p>
+
+<ol style="color:#818589">
+<li><a style="text-decoration:none;font-weight:bold" href="https://www.imdb.com/search/title/?title_type=feature&genres=action">Action</a></li>
+<li><a style="text-decoration:none;font-weight:bold" href="https://www.imdb.com/search/title/?title_type=feature&genres=romance">Romance</a></li>
+<li><a style="text-decoration:none;font-weight:bold" href="https://www.imdb.com/search/title/?title_type=feature&genres=horror">Horror</a></li>
+<li><a style="text-decoration:none;font-weight:bold" href="https://www.imdb.com/search/title/?genres=sci-fi">Science Fiction</a></li>
+<li><a style="text-decoration:none;font-weight:bold" href="https://www.imdb.com/search/title/?genres=drama&title_type=feature&explore=genres">Drama</a></li>
+</ol>
+<br>
+
+<script>
+countDown();
+</script>
+<br>
+<script>
+document.write("This document was last modified on " + document.lastModified);
+</script>
+</main>
+<footer><sub><i>Copyright &copy; 2023 Kolbe Williams-Wimmer Movie Recomendations inc. All right reserved.</i> For more information, contact us at <a href="mailto:kolbeleowilliams@gmail.com">kolbeleowilliams@gmail.com</a></sub></footer>
+</div>
+</body>
+</html>

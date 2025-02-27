@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Movie Recomendations Home</title>
+<style>
+ul{list-style-image:url("PopcornIcon.png");}
+</style>
+<link href="styles.css" rel="stylesheet">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script>
+function quotes()
+{
+var ourQuotes = new Array()
+ourQuotes[0] = "We have the best movie recomendations!";
+ourQuotes[1] = "Our recomendations automatically update when new movies are released!";
+ourQuotes[2] = "Fill out our form to help us imporve!";
+ourQuotes[3] = "Don't forget to grab some snacks for the movie!";
+ourQuotes[4] = "If you're looking for a movie to watch, you're in the right place!";
+
+var randomNum = Math.floor(Math.random()*5);
+document.write(ourQuotes[randomNum]);
+}
+</script>
+</head>
+<body>
+<script>
+var name;
+name = window.prompt("Enter you name: ");
+window.alert("Welcome " + name);
+</script>
+<div id="wrapper">
+<header style="font-size:20pt">
+<b>Movies Worth Watching</b>
+</header>
+<nav>
+<ul style = "margin-left:10px">
+<li><a href="resources.html">Movie Recomendations</a></li>
+<li><a href="pictures.html">Pictures</a></li>
+<li><a href="contactus.html">Contact Us</a></li>
+<li><a href="customerform.html">Fill Out Our Form</a></li>
+</ul>
+</nav>
+
+<main>
+<h1 style="color:gold;font-family:verdana">Find Great Movies to Watch</h1>
+<br>
+<script>
+quotes();
+</script>
+<br><br>
+<h2 style="color:maroon;font-family:arial">Why Use This Website</h2>
+<p>
+Everyone loves a good movie. A movie can make you, laugh, cry, or scream in terror, but the feeling of watching an intriguing movie cannot be matched. The effects of movies on our society is evident no matter where you are. Halloween costumes, t-shirts, and references to movie quotes in other forms of pop culture are just some of the ways that movies consume our lives. However, finding a good movie to watch isn't always easy.
+</p>
+  
+<p>
+This webpage is the perfect place to find a movie that you will enjoy. By using the links provided, you can navigate to lists of the top fifty movies in each genre based on reviews. No matter your age, where you're from, or your favorite genre, this website will provide you with the best movie recomendations. You can see <b>hundreds</b> of different movies as well as other informarion including a description of what the movie is about.
+</p>
+
+<h3 style="color:maroon;font-family:arial">Services</h3>
+<dl>
+<dt>Lots of Genres</dt>
+<dd>Most people enjoy many different genres of movies, and this website has recomendations from them all. The top movies from each genre can be found using the Movie Recomendations link at the top of the page.</dd>
+<dt>Easy to Navigate</dt>
+<dd>Sometimes, finding a movie to watch can be difficult, even if you know what kind of movie you are looking for. However, This webpage is designed to be simple and easy to follow. Simply navigating through the links provided will show you hundreds of great movies.</dd>
+<dt>Movie Descriptions</dt>
+<dd>A brief description for each movie describes what the movie is about. There is no need to waste time trying to decide if the plot of the movie is interesting...simply read the description.</dd>
+</dl>
+
+<video controls width="900" height="100" autoplay=autoplay>
+<source src="videoReel.mp4">
+</video>
+
+<script>
+document.write("This document was last modified on " + document.lastModified);
+</script>
+</main>
+<footer><sub><i>Copyright &copy; 2023 Kolbe Williams-Wimmer Movie Recomendations inc. All right reserved.</i> For more information, contact us at <a href="mailto:kolbeleowilliams@gmail.com">kolbeleowilliams@gmail.com</a></sub></footer>
+</div>
+</body>
+</html>
